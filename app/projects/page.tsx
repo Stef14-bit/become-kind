@@ -1,14 +1,12 @@
 import ProjectsCard from "@/components/ProjectsCard";
 import React from "react";
 import logo from "../../public/logo.webp";
-import Hero from "@/components/Hero";
 
 type Props = {};
 
 function Projects({}: Props) {
   return (
     <>
-      <Hero />
       <h1 className="text-center font-thin py-12 text-3xl lg:text-6xl mt-40">
         OUR Programs
       </h1>
