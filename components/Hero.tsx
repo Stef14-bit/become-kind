@@ -6,9 +6,9 @@ type Props = {};
 
 function Hero({}: Props) {
   return (
-    <div className="fixed top-5 z-0 opacity-50">
+    <div className="fixed m-5 top-5 z-0 opacity-50">
       <Image src={banner} alt="bekome kind banner " className="mt-20" />
-      <div className=" fixed top-0  h-20 bg bg-red-700 opacity-50"></div>
+      <div className=" fixed top-0  h-20 bg bg-black "></div>
     </div>
   );
 }
