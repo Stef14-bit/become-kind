@@ -1,4 +1,4 @@
-import ProjectsCard from "@/components/ProjectsCard";
+import ProjectsCard from "@/app/projects/components/ProjectsCard";
 import React from "react";
 import logo from "../../public/logo.webp";
 
