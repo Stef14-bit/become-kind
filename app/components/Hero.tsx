@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import banner from "../public/banner.webp";
+import banner from "../../public/banner.webp";
 
 type Props = {};
 

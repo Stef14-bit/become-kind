@@ -1,4 +1,4 @@
-import Nav from "@/app/projects/components/Nav";
+import Nav from "@/app/components/Nav";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";

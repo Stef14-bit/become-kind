@@ -1,6 +1,5 @@
-import Image from "next/image";
-import About from "@/app/projects/components/AboutUs";
-import Hero from "@/app/projects/components/Hero";
+import About from "@/app/components/AboutUs";
+import Hero from "@/app/components/Hero";
 
 export default function Home() {
   return (
