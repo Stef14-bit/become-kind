@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import Button from "./Button";
 import navList from "@/data/navList";
 import Image from "next/image";
-import logo from "../public/logo.webp";
-
+import logo from "../../public/logo.webp";
 const Nav: React.FC = () => {
   const [open, setOpen] = useState(false);
 

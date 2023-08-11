@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import picture from "../assets/larisa0.webp";
+import picture from "../../assets/larisa0.webp";
 
 type Props = {};
 
