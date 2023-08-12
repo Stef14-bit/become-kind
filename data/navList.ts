@@ -4,7 +4,7 @@ interface NavLink {
 }
 
 const navList: NavLink[] = [
-  { linkName: "About Us", link: "/" },
+  { linkName: "Home", link: "/" },
   { linkName: "Projects", link: "/projects" },
   { linkName: "Books", link: "/" },
   { linkName: "Blog", link: "/" },

@@ -2,7 +2,7 @@ import About from "@/app/components/AboutUs";
 import Hero from "@/app/components/Hero";
 import esbkr from "../assets/esbkr.webp";
 import Image from "next/image";
-
+import ImageGallery from "@/app/components/ImageGallery";
 export default function Home() {
   return (
     <>
@@ -17,6 +17,7 @@ export default function Home() {
           </h2>
           <Image className="p-8" src={esbkr} alt="eat sleep be kind repeat" />
         </div>
+        <ImageGallery />
       </div>
     </>
   );
