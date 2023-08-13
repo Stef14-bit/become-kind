@@ -72,20 +72,3 @@ const Nav: React.FC = () => {
 };
 
 export default Nav;
-
-// const [isScrolled, setIsScrolled] = useState(false);
-
-// useEffect(() => {
-//   // Add event listener to track scrolling
-//   const handleScroll = () => {
-//     const currentScrollPos = window.scrollY;
-//     setIsScrolled(currentScrollPos > 0); // Set isScrolled to true when scrolling occurs
-//   };
-
-//   window.addEventListener("scroll", handleScroll);
-
-//   // Remove the event listener on component unmount
-//   return () => {
-//     window.removeEventListener("scroll", handleScroll);
-//   };
-// }, []);

@@ -6,7 +6,7 @@ type Props = {};
 
 function Hero({}: Props) {
   return (
-    <div className="relative w-full mb-10">
+    <section className="relative w-full mb-10">
       <div className="bg bg-black relative h-full">
         <Image
           src={banner}
@@ -19,7 +19,7 @@ function Hero({}: Props) {
           </h2>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
