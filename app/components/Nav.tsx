@@ -65,7 +65,7 @@ const Nav: React.FC = () => {
             </a>
           </li>
         ))}
-        <Button>Donate</Button>
+        <Button>Get Involved</Button>
       </ul>
     </div>
   );
