@@ -10,7 +10,8 @@ type Props = {
 
 function ImageGallery({}: Props) {
   // State to manage the selected picture and modal visibility
-  const [selectedPicture, setSelectedPicture] = useState(null);
+  const [selectedPicture, setSelectedPicture] =
+    useState<StaticImageData | null>(null);
 
   // Function to toggle the modal visibility
   const toggleModal = () => {
@@ -18,7 +19,7 @@ function ImageGallery({}: Props) {
   };
 
   // Function to open the modal with the selected picture
-  const openModal = (picture) => {
+  const openModal = (picture: StaticImageData) => {
     setSelectedPicture(picture);
   };
 
