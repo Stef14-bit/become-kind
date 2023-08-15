@@ -1,19 +1,23 @@
-import React from "react";
-import Image from "next/image";
-import larisa0 from "@/assets/larisa0.webp";
+"use client";
+import React, { useState } from "react";
+import Image, { StaticImageData } from "next/image";
 
-type Props = {};
+type Props = {
+  picture: StaticImageData;
+  altText: string;
+};
 
-function ImageGallery({}: Props) {
+function ImageGallery({ picture, altText }: Props) {
   return (
-    <div className="mb-56  p-5 flex overflow-scroll scroll-smooth snap-x">
-      <Image className="p-2 w-40" src={larisa0} alt={""} />
-      <Image className="p-2" src={larisa0} alt={""} />
-      <Image className="p-2" src={larisa0} alt={""} />
-      <Image className="p-2" src={larisa0} alt={""} />
-      <Image className="p-2" src={larisa0} alt={""} />
-      <Image className="p-2" src={larisa0} alt={""} />
-    </div>
+    <section className="mt-20 p-10 shadow-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-4 row-start-2 scroll-smooth">
+      <div className="hover:-translate-y-2 transition-transform duration-300 cursor-pointer">
+        <Image
+          src={picture}
+          alt={altText}
+          className="w-full h-full object-contain"
+        />
+      </div>
+    </section>
   );
 }
 
