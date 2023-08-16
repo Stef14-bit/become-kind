@@ -16,7 +16,9 @@ function Gallery({}: Props) {
       <button className="mt-20" onClick={toggleModal}>
         Modal
       </button>
-      {imageModalToggle && <ImageModal picture={larisa0} alt="larisa" />}
+      {imageModalToggle && (
+        <ImageModal picture={larisa0} alt="larisa" closeModal={toggleModal} />
+      )}
       <ImageGallery picture={larisa0} altText="larisa" />
     </section>
   );
