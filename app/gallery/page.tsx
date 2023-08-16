@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ImageGallery from "../components/ImageGallery";
 import larisa0 from "@/assets/larisa0.webp";
 import ImageModal from "../components/ImageModal";
+import Image from "next/image";
 
 type Props = {};
 
@@ -13,13 +14,17 @@ function Gallery({}: Props) {
   }
   return (
     <section>
-      <button className="mt-20" onClick={toggleModal}>
-        Modal
-      </button>
       {imageModalToggle && (
         <ImageModal picture={larisa0} alt="larisa" closeModal={toggleModal} />
       )}
-      <ImageGallery picture={larisa0} altText="larisa" />
+      <div className="mt-20 p-10 shadow-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-4 row-start-2 scroll-smooth">
+        <Image
+          onClick={toggleModal}
+          src={larisa0}
+          alt="larisa"
+          className="hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
+        />
+      </div>
     </section>
   );
 }
