@@ -8,6 +8,7 @@ type Props = {
 };
 
 function ImageGallery({ picture, altText }: Props) {
+  const [imageModal, setImageModal] = useState(false);
   return (
     <section className="mt-20 p-10 shadow-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-4 row-start-2 scroll-smooth">
       <div className="hover:-translate-y-2 transition-transform duration-300 cursor-pointer">
