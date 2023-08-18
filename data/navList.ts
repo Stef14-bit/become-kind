@@ -8,7 +8,7 @@ const navList: NavLink[] = [
   { linkName: "Projects", link: "/projects" },
   { linkName: "Books", link: "/" },
   { linkName: "Gallery", link: "/gallery" },
-  { linkName: "Blog", link: "/" },
+  { linkName: "Blog", link: "/blog" },
   { linkName: "Contact", link: "/" },
 ];
 

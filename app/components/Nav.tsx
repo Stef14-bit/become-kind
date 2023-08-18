@@ -8,13 +8,17 @@ const Nav: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div
-      className={`w-full absolute top-0 left-0 bg-white py-2 px-4 md:flex items-center justify-between ${
+    <nav
+      className={`w-full sticky top-0 left-0 bg-white py-2 px-4 md:flex items-center justify-between ${
         open ? "z-30" : "z-10"
       }`}>
       <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
         <span className="px-4">
-          <Image src={logo} height={60} alt="become kind logo"></Image>
+          <Image
+            src={logo}
+            height={60}
+            width={80}
+            alt="become kind logo"></Image>
         </span>
       </div>
 
@@ -67,7 +71,7 @@ const Nav: React.FC = () => {
         ))}
         <Button>Get Involved</Button>
       </ul>
-    </div>
+    </nav>
   );
 };
 
