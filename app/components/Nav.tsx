@@ -9,7 +9,7 @@ const Nav: React.FC = () => {
 
   return (
     <div
-      className={`w-full absolute top-0 left-0 bg-white py-2 px-4 md:flex items-center justify-between ${
+      className={`w-full sticky top-0 left-0 bg-white py-2 px-4 md:flex items-center justify-between ${
         open ? "z-30" : "z-10"
       }`}>
       <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">

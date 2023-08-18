@@ -4,7 +4,7 @@ import RewardsContainer from "./components/RewardsContainer";
 export default function Home() {
   return (
     <>
-      <div className="  w-full mt-20 h-screen">
+      <div className="">
         <Hero />
         <About />
         <RewardsContainer />
