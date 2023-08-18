@@ -6,7 +6,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <section className="flex flex-col w-full lg:flex-row">
+    <section className="flex flex-col items-center  w-full lg:flex-row">
       <div className="flex flex-col items-center justify-center lg:w-1/2">
         <h2 className="font-thin  text-3xl lg:text-6xl py-9 text-center">
           Who We Are
