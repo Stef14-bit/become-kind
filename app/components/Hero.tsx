@@ -12,7 +12,7 @@ function Hero({}: Props) {
           alt="bekome kind banner"
           layout="responsive" // Set layout to "responsive"
           width={1200}
-          height={800}
+          height={1200}
           className="opacity-50 w-full h-auto"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">

@@ -14,7 +14,11 @@ const Nav: React.FC = () => {
       }`}>
       <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
         <span className="px-4">
-          <Image src={logo} height={60} alt="become kind logo"></Image>
+          <Image
+            src={logo}
+            height={60}
+            width={80}
+            alt="become kind logo"></Image>
         </span>
       </div>
 
