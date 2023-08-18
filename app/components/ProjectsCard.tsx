@@ -10,7 +10,7 @@ type Props = {
 
 function ProjectsCard({ picture, picture_description, title, content }: Props) {
   return (
-    <div className="m-3 max-w-xs w-full h-96 bg-red-100 border border-gray-200 rounded-lg shadow flex flex-col">
+    <div className="m-3 max-w-xs w-full h-[36rem] bg-red-50 border border-gray-200 rounded-lg shadow flex flex-col">
       <div className="h-full relative">
         <Image
           layout="fill"
@@ -32,7 +32,7 @@ function ProjectsCard({ picture, picture_description, title, content }: Props) {
         </div>
 
         <div className="flex justify-center">
-          <button className="bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-500 duration-500">
+          <button className="bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-400 duration-200">
             <a href="/">Read More</a>
           </button>
         </div>
