@@ -8,7 +8,7 @@ const Nav: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div
+    <nav
       className={`w-full sticky top-0 left-0 bg-white py-2 px-4 md:flex items-center justify-between ${
         open ? "z-30" : "z-10"
       }`}>
@@ -71,7 +71,7 @@ const Nav: React.FC = () => {
         ))}
         <Button>Get Involved</Button>
       </ul>
-    </div>
+    </nav>
   );
 };
 
