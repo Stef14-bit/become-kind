@@ -6,7 +6,7 @@ type Props = {};
 function Hero({}: Props) {
   return (
     <section className="relative w-full mb-10">
-      <div className="bg bg-black relative h-full">
+      <div className="bg bg-black h-full">
         <Image
           src="https://become-kind.s3.eu-central-1.amazonaws.com/page/banner.webp"
           alt="bekome kind banner"
