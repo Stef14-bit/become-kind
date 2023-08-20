@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import picture from "../../assets/larisa0.webp";
 
 type Props = {};
 
@@ -20,9 +19,17 @@ function About({}: Props) {
           a positive change in all of our pursuits.&quot;
         </blockquote>
       </div>
-      <div className="lg:w-1/2">
+      <div className="lg:w-1/2 p-3">
         {" "}
-        <Image className="w-full" src={picture} alt="women huging" />
+        <Image
+          className="w-full"
+          src={
+            "https://become-kind.s3.eu-central-1.amazonaws.com/page/main-page.png"
+          }
+          width={300}
+          height={400}
+          alt="women huging"
+        />
       </div>
     </section>
   );
