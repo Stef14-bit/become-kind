@@ -10,7 +10,7 @@ const projects: projects[] = [
   {
     id: 1,
     picture:
-      "https://become-kind.s3.eu-central-1.amazonaws.com/projects/project0.webp",
+      "https://become-kind.s3.eu-central-1.amazonaws.com/projects/project0.png",
     picture_description: " two women chatting",
     title: "Eat Sleep Be Kind Repeat",
     content: "Transforming Lives",
@@ -18,7 +18,7 @@ const projects: projects[] = [
   {
     id: 2,
     picture:
-      "https://become-kind.s3.eu-central-1.amazonaws.com/projects/project1.webp",
+      "https://become-kind.s3.eu-central-1.amazonaws.com/projects/project1.png",
     picture_description: " kids playing",
     title: "COMMUNITY OUTREACH",
     content: "Empowering Others",
@@ -26,7 +26,7 @@ const projects: projects[] = [
   {
     id: 3,
     picture:
-      "https://become-kind.s3.eu-central-1.amazonaws.com/projects/project2.webp",
+      "https://become-kind.s3.eu-central-1.amazonaws.com/projects/project2.png",
     picture_description: " two women chatting",
     title: "EDUCATION",
     content: "Helping Those Who Need Us Most",

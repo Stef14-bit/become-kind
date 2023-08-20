@@ -9,7 +9,7 @@ function Projects({}: Props) {
       <h1 className="text-center font-thin py-12 text-3xl lg:text-6xl mt-40">
         OUR Programs
       </h1>
-      <p className="text-center p-4 md:p-28 ">
+      <p className="text-center p-4 md:p-28 font-light">
         BE KIND is achieving more with our initiatives than ever before, and we
         are very proud of the progress we continue to make. Below are some of
         our most recent projects. Learn more about what we do, who we help, and

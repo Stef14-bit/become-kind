@@ -10,7 +10,7 @@ type Props = {
 
 function ProjectsCard({ picture, picture_description, title, content }: Props) {
   return (
-    <div className="m-3 max-w-xs w-full h-[36rem] bg-red-50 border border-gray-200 rounded-lg shadow flex flex-col">
+    <div className="m-3 max-w-xs w-full h-[34rem]  border border-gray-200 rounded-lg shadow flex flex-col overflow-hidden">
       <div className="h-full relative">
         <Image
           layout="fill"
@@ -20,13 +20,13 @@ function ProjectsCard({ picture, picture_description, title, content }: Props) {
         />
       </div>
 
-      <div className="p-5 flex flex-col justify-between h-full">
+      <div className="p-5 flex flex-col justify-around h-1/2">
         <div>
           <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-800 text-center">
             {title}
           </h5>
 
-          <p className="mb-3 font-normal text-gray-700 text-center">
+          <p className="mb-2 font-normal text-gray-700 text-center">
             {content}
           </p>
         </div>

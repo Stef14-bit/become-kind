@@ -1,7 +1,6 @@
 import React from "react";
 import rewards from "@/data/bodyRewards";
 import Image from "next/image";
-import esbkr from "@/assets/esbkr.webp";
 type Props = {};
 
 function RewardsContainer({}: Props) {
@@ -11,6 +10,16 @@ function RewardsContainer({}: Props) {
         Reward Your Body
       </h2>
       <div className="flex justify-center flex-col sm:flex-row items-center px-10">
+        {" "}
+        <Image
+          width={780}
+          height={800}
+          className="p-8 "
+          src={
+            "https://become-kind.s3.eu-central-1.amazonaws.com/page/esbkr.webp"
+          }
+          alt="eat sleep be kind repeat"
+        />
         <ul>
           {rewards.map((reward, id) => (
             <li className="m-2" key={id}>
@@ -21,12 +30,6 @@ function RewardsContainer({}: Props) {
             </li>
           ))}
         </ul>
-        <Image
-          width={780}
-          className="p-8 "
-          src={esbkr}
-          alt="eat sleep be kind repeat"
-        />
       </div>
     </section>
   );
