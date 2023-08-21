@@ -2,13 +2,15 @@
 import React from "react";
 import Image from "next/image";
 import galleryImages from "@/data/gallery";
+import ImageModal from "../components/ImageModal";
 
 type Props = {};
 
 function Gallery({}: Props) {
   return (
     <>
-      <h2 className="font-thin text-3xl lg:text-6xl py-9 text-center">
+      <ImageModal />
+      {/* <h2 className="font-thin text-3xl lg:text-6xl py-9 text-center">
         Gallery
       </h2>{" "}
       <section className=" mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 m-4 gap-4 py-5">
@@ -24,7 +26,7 @@ function Gallery({}: Props) {
             />
           </div>
         ))}
-      </section>
+      </section> */}
     </>
   );
 }
