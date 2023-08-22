@@ -27,9 +27,15 @@ function ImageModal({ currentIndex, onCloseModal }: Props) {
 
   return (
     <div className="fixed h-screen w-full top-0 z-20 left-0 bg-black/50 flex flex-col items-center justify-center  p-5">
-      <div className="h-4/5 w-full bg-blue-500 m-5">
+      <div className="h-4/5 w-full bg-blue-500 m-5 flex">
         {galleryImages.map((image) => (
-          <Image key={index} src={image.url} alt="" />
+          <Image
+            key={image.key}
+            src={image.url}
+            alt=""
+            width={1000}
+            height={1000}
+          />
         ))}
       </div>
       <div className="h-1/5 w-full bg-red-500 mb-5"></div>
