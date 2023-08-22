@@ -10,35 +10,29 @@ type Props = {
 };
 
 function ImageModal({ currentIndex, onCloseModal }: Props) {
-  const prevSlide = () => {
-    const newIndex =
-      (currentIndex + galleryImages.length - 1) % galleryImages.length;
-    onCloseModal(); // Close the modal before changing slide
-  };
-
-  const nextSlide = () => {
-    const newIndex = (currentIndex + 1) % galleryImages.length;
-    onCloseModal(); // Close the modal before changing slide
-  };
-
-  const goToSlide = (slideIndex: number) => {
-    onCloseModal(); // Close the modal before changing slide
-  };
-
   return (
-    <div className="fixed h-screen w-full top-0 z-20 left-0 bg-black/50 flex flex-col items-center justify-center  p-5">
-      <div className="h-4/5 w-full bg-blue-500 m-5 flex">
-        {galleryImages.map((image) => (
+    <div className="fixed h-screen w-full top-0 z-20 left-0 bg-black/50 flex flex-col  p-5">
+      <div className="h-4/5 w-full bg-black flex justify-center ">
+        <Image
+          src={galleryImages[currentIndex].url}
+          alt=""
+          width={1000}
+          height={1000}
+          layout="intrinsinc"
+        />
+      </div>
+      <div className="h-1/5 w-full bg-white mb-5 flex  overflow-x-scroll scroll-smooth">
+        {galleryImages.map((image, index) => (
           <Image
-            key={image.key}
+            className="m-2"
+            width={100}
+            height={100}
+            key={index}
             src={image.url}
-            alt=""
-            width={1000}
-            height={1000}
+            alt={`Thumbnail ${index}`}
           />
         ))}
       </div>
-      <div className="h-1/5 w-full bg-red-500 mb-5"></div>
     </div>
   );
 }
