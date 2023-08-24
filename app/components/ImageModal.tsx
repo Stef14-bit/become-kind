@@ -16,8 +16,8 @@ function ImageModal({ currentIndex, onCloseModal }: Props) {
         <Image
           src={galleryImages[currentIndex].url}
           alt=""
-          width={1000}
-          height={1000}
+          width={400}
+          height={500}
           layout="intrinsinc"
         />
       </div>
