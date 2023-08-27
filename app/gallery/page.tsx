@@ -15,6 +15,9 @@ function Gallery({}: Props) {
     setIsModalOpen(true);
   };
 
+  const newImageView = (index: number) => {
+    setClickedImageIndex(index);
+  };
   const closeModal = () => {
     setIsModalOpen(false);
   };
@@ -42,6 +45,7 @@ function Gallery({}: Props) {
       {isModalOpen && (
         <ImageModal
           currentIndex={clickedImageIndex}
+          newImage={newImageView}
           onCloseModal={closeModal}
         />
       )}
