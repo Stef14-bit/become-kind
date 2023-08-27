@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import galleryImages from "@/data/gallery";
-import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
