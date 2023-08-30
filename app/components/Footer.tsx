@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -8,6 +9,7 @@ function Footer({}: Props) {
       <p>becomekind@proton.me</p>
       <p>©2023 BE KIND</p>
       <p>Proudly presented by becomekind.com</p>
+      <Link href={"/app/about_us/"} />
     </footer>
   );
 }
