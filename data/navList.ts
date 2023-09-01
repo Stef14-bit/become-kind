@@ -9,7 +9,7 @@ const navList: NavLink[] = [
   { linkName: "Books", link: "/books" },
   { linkName: "Gallery", link: "/gallery" },
   { linkName: "Blog", link: "/blog" },
-  { linkName: "Contact", link: "/" },
+  { linkName: "Contact", link: "/contact" },
 ];
 
 export default navList;

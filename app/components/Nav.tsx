@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Button from "./Button";
 import navList from "@/data/navList";
 import Image from "next/image";
+import Link from "next/link";
 import logo from "../../public/logo.webp";
 const Nav: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -14,11 +15,13 @@ const Nav: React.FC = () => {
       }`}>
       <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
         <span className="px-4">
-          <Image
-            src={logo}
-            height={60}
-            width={80}
-            alt="become kind logo"></Image>
+          <Link href={"/"}>
+            <Image
+              src={logo}
+              height={60}
+              width={80}
+              alt="become kind logo"></Image>
+          </Link>
         </span>
       </div>
 

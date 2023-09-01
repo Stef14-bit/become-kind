@@ -2,14 +2,14 @@ import React from "react";
 
 type Props = {};
 
-function Books({}: Props) {
+function AboutUs({}: Props) {
   return (
     <div className="">
       <h2 className="font-thin  text-3xl lg:text-6xl py-9 text-center mt-[50%]">
-        Coming soon
+        work in progress
       </h2>
     </div>
   );
 }
 
-export default Books;
+export default AboutUs;
