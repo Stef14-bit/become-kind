@@ -8,7 +8,7 @@ function Footer({}: Props) {
     <footer className="w-full border-gray-400 border-t-2 border-b-4 h-32 flex justify-around items-center font-light bg-red-50 ">
       <div className=" flex flex-col justify-center content-center p-5 text-center">
         {" "}
-        <p>Proudly presented by becomekind.com</p> <p>becomekind@proton.me</p>
+        <Link href={"/contact_us"}>Contact</Link> <p>becomekind@proton.me</p>
       </div>
       <div className="flex flex-col justify-center content-center p-5 text-center">
         {" "}
