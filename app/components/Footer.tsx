@@ -8,12 +8,13 @@ function Footer({}: Props) {
     <footer className="w-full border-gray-400 border-t-2 border-b-4 h-32 flex justify-around items-center font-light bg-red-50 ">
       <div className=" flex flex-col justify-center content-center p-5 text-center">
         {" "}
-        <Link href={"/contact_us"}>Contact</Link> <p>becomekind@proton.me</p>
-      </div>
-      <div className="flex flex-col justify-center content-center p-5 text-center">
-        {" "}
+        <Link className="p-2" href={"/about_us/"}>
+          About
+        </Link>
+        <Link className="p-2" href={"/contact_us"}>
+          Contact
+        </Link>{" "}
         <p>©2023 BE KIND</p>
-        <Link href={"/about_us/"}>About</Link>
       </div>
     </footer>
   );
