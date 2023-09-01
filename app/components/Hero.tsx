@@ -10,7 +10,7 @@ function Hero({}: Props) {
         <Image
           src="https://become-kind.s3.eu-central-1.amazonaws.com/page/banner.webp"
           alt="bekome kind banner"
-          layout="responsive" // Set layout to "responsive"
+          // layout="responsive" // Set layout to "responsive"
           width={1200}
           height={1200}
           className="opacity-50 w-full h-auto"
