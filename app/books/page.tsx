@@ -5,8 +5,10 @@ type Props = {};
 
 function Books({}: Props) {
   return (
-    <div>
-      <ImageSlider />
+    <div className="">
+      <h2 className="font-thin  text-3xl lg:text-6xl py-9 text-center mt-[50%]">
+        Coming soon
+      </h2>
     </div>
   );
 }
