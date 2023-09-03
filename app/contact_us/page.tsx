@@ -5,11 +5,11 @@ type Props = {};
 
 function page({}: Props) {
   return (
-    <>
+    <div className="flex flex-col justify-center items-center">
       <h2 className="font-thin  text-3xl lg:text-6xl py-9 text-center">
         Ask us anything!
       </h2>
-      <form className="p-10 text-xl font-light">
+      <form className="md:w-[50%] p-10 text-xl font-light ">
         <div className="flex flex-col justify-center items-center py-5 ">
           <label htmlFor="email">Email</label>
           <input
@@ -35,7 +35,7 @@ function page({}: Props) {
         </div>
         <Button>Submit</Button>
       </form>
-    </>
+    </div>
   );
 }
 
