@@ -8,6 +8,7 @@ function UserInfo({}: Props) {
   return (
     <div className="flex p-5 content-center">
       <Image
+        className="py-2"
         src={
           "https://become-kind.s3.eu-central-1.amazonaws.com/gallery/gallery7.png"
         }
