@@ -8,7 +8,7 @@ const Blog = (props: Props) => {
     <section className="flex justify-center items-center flex-col">
       <h2 className="font-thin text-3xl lg:text-6xl py-9 text-center">Blog</h2>
 
-      <div className="bg-red-50 w-9/12 py-10">
+      <div className="m-5">
         <BlogPost />
       </div>
     </section>
